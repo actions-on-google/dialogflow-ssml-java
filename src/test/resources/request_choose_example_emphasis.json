@@ -1,0 +1,42 @@
+{
+  "responseId": "responseId",
+  "queryResult": {
+    "queryText": "let me hear an example of emphasis",
+    "action": "tell.example",
+    "parameters": {
+      "element": "emphasis"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Sorry, I couldn't get a response for the Choose Example intent from your webhook.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Sorry, I couldn't get a response for the Choose Example intent from your webhook."
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/dialogflow-ssml-java/agent/sessions/sessionId/contexts/_actions_on_google",
+        "lifespanCount": 98,
+        "parameters": {
+          "data": "{}",
+          "element.original": "emphasis",
+          "element": "emphasis"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/dialogflow-ssml-java/agent/intents/intentId",
+      "displayName": "Choose Example"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/dialogflow-ssml-java/agent/sessions/sessionId"
+}

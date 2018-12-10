@@ -1,0 +1,37 @@
+{
+  "fulfillmentText": "You can ask me about audio, break, emphasis, layered, paragraph, pitch, prosody, say-as, speed, sub, and volume.",
+  "outputContexts": [
+    {
+      "lifespanCount": 99,
+      "name": "projects/dialogflow-ssml-java/agent/sessions/sessionId/contexts/_actions_on_google",
+      "parameters": {
+        "data": "{}"
+      }
+    }
+  ],
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "textToSpeech": "Welcome! Ask me for an example of a SSML element. You can say \"give me an example of the prosody element\"."
+            }
+          },
+          {
+            "simpleResponse": {
+              "textToSpeech": "You can ask me about audio, break, emphasis, layered, paragraph, pitch, prosody, say-as, speed, sub, and volume."
+            }
+          }
+        ]
+      },
+      "isSsml": false,
+      "systemIntent": {
+        "intent": "actions.intent.TEXT",
+        "data": {}
+      },
+      "userStorage": "{\"data\":{}}"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "responseId": "responseId",
+  "queryResult": {
+    "queryText": "",
+    "action": "input.welcome",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Sorry, I couldn't get a response for the Welcome intent from your webhook.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Sorry, I couldn't get a response for the Welcome intent from your webhook."
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/dialogflow-ssml-java/agent/sessions/sessionId/contexts/_actions_on_google",
+        "lifespanCount": 98,
+        "parameters": {
+          "data": "{}"
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/dialogflow-ssml-java/agent/intents/intentId",
+      "displayName": "Welcome"
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/dialogflow-ssml-java/agent/sessions/sessionId"
+}

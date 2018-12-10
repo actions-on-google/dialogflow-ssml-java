@@ -1,0 +1,30 @@
+{
+  "responseId": "responseId",
+  "queryResult": {
+    "queryText": "dfshfghgfds",
+    "action": "input.unknown",
+    "parameters": {},
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Sorry, I couldn't get a response for the Fallback intent from your webhook.",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Sorry, I couldn't get a response for the Fallback intent from your webhook."
+          ]
+        }
+      }
+    ],
+    "intent": {
+      "name": "projects/dialogflow-ssml-java/agent/intents/intentId",
+      "displayName": "Fallback",
+      "isFallback": true
+    },
+    "intentDetectionConfidence": 1,
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "payload": {}
+  },
+  "session": "projects/dialogflow-ssml-java/agent/sessions/sessionId"
+}

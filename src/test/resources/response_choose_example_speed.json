@@ -1,0 +1,36 @@
+{
+  "outputContexts": [
+    {
+      "lifespanCount": 99,
+      "name": "projects/dialogflow-ssml-java/agent/sessions/sessionId/contexts/_actions_on_google",
+      "parameters": {
+        "data": "{}"
+      }
+    }
+  ],
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "textToSpeech": "Ok, here's an SSML example of speed."
+            }
+          },
+          {
+            "simpleResponse": {
+              "ssml": "<speak>This is without prosody. <prosody rate=\"100%\">This is speaking at 100% rate.</prosody><prosody rate=\"150%\">This is speaking at 150% rate.</prosody><prosody rate=\"foo\">This is speaking at normal rate.</prosody><prosody rate=\"200%\">This is speaking at 200% rate.</prosody><prosody rate=\"medium\">This is speaking at medium rate.</prosody><prosody rate=\"300%\">This is speaking at 300% rate.</prosody><prosody rate=\"default\">This is speaking at default rate.</prosody><prosody rate=\"75%\">This is speaking at 75% rate.</prosody><prosody rate=\"50%\">This is speaking at 50% rate.</prosody><prosody rate=\"25%\">This is speaking at 25% rate.</prosody><prosody rate=\"10%\">This is speaking at 10% rate.</prosody></speak>"
+            }
+          }
+        ]
+      },
+      "isSsml": false,
+      "systemIntent": {
+        "intent": "actions.intent.TEXT",
+        "data": {}
+      },
+      "userStorage": "{\"data\":{}}"
+    }
+  }
+}

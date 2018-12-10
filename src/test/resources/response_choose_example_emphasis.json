@@ -1,0 +1,36 @@
+{
+  "outputContexts": [
+    {
+      "lifespanCount": 99,
+      "name": "projects/dialogflow-ssml-java/agent/sessions/sessionId/contexts/_actions_on_google",
+      "parameters": {
+        "data": "{}"
+      }
+    }
+  ],
+  "payload": {
+    "google": {
+      "expectUserResponse": true,
+      "richResponse": {
+        "items": [
+          {
+            "simpleResponse": {
+              "textToSpeech": "Ok, here's an SSML example of emphasis."
+            }
+          },
+          {
+            "simpleResponse": {
+              "ssml": "<speak>I would like to emphasize the importance of SSML. I told you to pick up those toys an hour ago.<emphasis>I told you to pick up those toys an hour ago.</emphasis><emphasis level=\"strong\">I told you to pick up those toys an hour ago.</emphasis><emphasis level=\"moderate\">I told you to pick up those toys an hour ago.</emphasis><emphasis level=\"reduced\">I told you to pick up those toys an hour ago.</emphasis><emphasis level=\"none\">I told you to pick up those toys an hour ago.</emphasis></speak>"
+            }
+          }
+        ]
+      },
+      "isSsml": false,
+      "systemIntent": {
+        "intent": "actions.intent.TEXT",
+        "data": {}
+      },
+      "userStorage": "{\"data\":{}}"
+    }
+  }
+}
