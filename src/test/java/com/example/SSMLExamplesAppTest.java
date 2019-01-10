@@ -17,8 +17,6 @@
 package com.example;
 
 import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
-import static org.junit.Assert.assertFalse;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -42,7 +40,8 @@ public class SSMLExamplesAppTest {
   // Pretty-prints response JSON so we can compare it with our pretty-printed sample output
   // in a human-readable way
   private static String prettyPrintJson(String jsonInput) {
-    Gson gson = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create();
+    Gson gson = new GsonBuilder().setPrettyPrinting().disableHtmlEscaping()
+        .create();
     JsonParser parser = new JsonParser();
     JsonElement element = parser.parse(jsonInput);
 
@@ -83,5 +82,4 @@ public class SSMLExamplesAppTest {
     assertCorrectResponse("choose_example_fallback_null");
     assertCorrectResponse("choose_example_fallback_empty");
   }
-
 }

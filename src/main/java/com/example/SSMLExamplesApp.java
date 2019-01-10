@@ -32,7 +32,8 @@ import org.slf4j.LoggerFactory;
 
 public class SSMLExamplesApp extends DialogflowApp {
 
-  private static final Logger LOGGER = LoggerFactory.getLogger(SSMLExamplesApp.class);
+  private static final Logger LOGGER = LoggerFactory
+      .getLogger(SSMLExamplesApp.class);
 
   @ForIntent("Welcome")
   public ActionResponse welcome(ActionRequest request) {
@@ -61,13 +62,13 @@ public class SSMLExamplesApp extends DialogflowApp {
         .build();
   }
 
-
   @ForIntent("Choose Example")
   public ActionResponse chooseExample(ActionRequest request) {
     // Grab the "element" parameter and respond with the fallback response if it was null
     Object element = request.getParameter("element");
     if (element == null || !(element instanceof String)) {
-      LOGGER.warn("Expected parameter 'element' was null or not a String instance");
+      LOGGER.warn(
+          "Expected parameter 'element' was null or not a String instance");
       return fallback(request);
     }
     // Attempt to find the corresponding element in the examples bundle, and respond with the
@@ -95,7 +96,6 @@ public class SSMLExamplesApp extends DialogflowApp {
     responseBuilder.add(ssmlResponse);
 
     return responseBuilder.build();
-
   }
 
   // Helper to build the examplesList response using the keys of all the examples
@@ -114,5 +114,4 @@ public class SSMLExamplesApp extends DialogflowApp {
 
     return MessageFormat.format(examplesList, listOfKeys, finalKey);
   }
-
 }
