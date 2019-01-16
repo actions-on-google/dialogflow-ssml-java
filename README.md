@@ -1,6 +1,6 @@
-# Actions on Google: SSML examples using Java
+# Actions on Google: SSML Sample
 
-A sample app for the Google Assistant that show examples of the available SSML elements
+A sample app for the Google Assistant that show examples of the available SSML elements using Java. 
 
 ### Setup Instructions
 
